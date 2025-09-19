@@ -66,6 +66,21 @@ Through iterative refinement, it demonstrates how careful architecture design (c
     Estimated Total Size (MB): 0.58
     ----------------------------------------------------------------
 
+## Receptive Field 
+
+| Layer        | Kernel | Stride | Jump (j) | RF Calculation      | RF Size   |
+|--------------|--------|--------|----------|---------------------|-----------|
+| Input        | –      | –      | 1        | –                   | 1         |
+| Conv1        | 3×3    | 1      | 1        | 1 + (3–1)×1         | **3**     |
+| Conv2        | 3×3    | 1      | 1        | 3 + (3–1)×1         | **5**     |
+| Conv3        | 3×3    | 1      | 1        | 5 + (3–1)×1         | **7**     |
+| Conv4        | 1×1    | 1      | 1        | 7 + (1–1)×1         | **7**     |
+| MaxPool      | 2×2    | 2      | 2        | 7 + (2–1)×1         | **8**     |
+| Conv5        | 3×3    | 1      | 2        | 8 + (3–1)×2         | **12**    |
+| Conv6        | 3×3    | 1      | 2        | 12 + (3–1)×2        | **16**    |
+| Conv7        | 3×3    | 1      | 2        | 16 + (3–1)×2        | **20**    |
+
+
 ## Training Output for 1st Epoch:  
 
     Epoch 16
