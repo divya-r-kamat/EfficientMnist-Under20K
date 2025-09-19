@@ -13,7 +13,7 @@ This project is extension to [MNIST classification](https://github.com/divya-r-k
 |[EfficientMnistNN_Iter6.ipynb](https://github.com/divya-r-kamat/EfficientMnist-Under20K/blob/main/EfficientMnistNN_Iter6.ipynb)|13,562|99.52%|Increased channel sizes moderately for richer representations while staying under 20K parameters. This yielded **stable 99.5% accuracy from epoch 16 onward**.!|
 
 
-Through iterative refinement, the project demonstrates how careful architecture design (channel scaling, 1x1 convolutions, GAP layers, and BatchNorm) can achieve **state-of-the-art MNIST accuracy** while keeping the parameter count well below 20K.
+Through iterative refinement, it demonstrates how careful architecture design (channel scaling, 1x1 convolutions, GAP layers, and BatchNorm) can achieve **state-of-the-art MNIST accuracy** while keeping the parameter count well below 20K.
 
 ## Model
 
